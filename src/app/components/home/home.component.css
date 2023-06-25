@@ -22,7 +22,7 @@ header {
   padding-top: 10px;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 578px) {
   .hero {
     margin-top: 50px;
     height: 40vh;
@@ -34,6 +34,12 @@ header {
 
   .social-icon {
     font-size: 0.9rem;
+  }
+
+  .social-media {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
   }
 }
 
@@ -142,7 +148,7 @@ nav a:hover {
 }
 
 .social-media a {
-  padding: 8px 12px;
+  padding: 2px 12px;
   background-color: var(--strongblue);
   font-weight: 500;
   border-radius: 7px;

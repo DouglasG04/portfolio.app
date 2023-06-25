@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { faBars, faClose, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faClose, faEnvelope, faDownload } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin, faAngular } from '@fortawesome/free-brands-svg-icons';
 @Component({
   selector: 'app-home',
@@ -13,6 +13,8 @@ export class HomeComponent {
   linkeding = faLinkedin
   mail = faEnvelope
   devWith = faAngular
+  pdf = faDownload
 }
+
 
 

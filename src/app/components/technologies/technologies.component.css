@@ -3,16 +3,25 @@
   flex-direction: column;
   text-align: center;
   padding: 20px 30px;
-
   background: #343a40;
-  box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
+  transition: all 0.2s ease-in;
 }
 
-.cards footer{
+.cards:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+
+.cards footer {
   font-size: 20px;
 }
 
-.cards .icon{
+.cards .icon {
   font-size: 90px
 }

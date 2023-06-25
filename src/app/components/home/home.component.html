@@ -1,4 +1,4 @@
-<header id="desktop-header" class="flex justify-between items-center py-2 animate__animated animate__fadeInDown">
+<header id="desktop-header" class="flex justify-between items-center py-2 lg:px-7 animate__animated animate__fadeInDown">
   <a href="#" class="md:text-3xl text-2xl text-white font-bold lg:ml-0 ml-3">
     <span class="text-[--lightblue] text-3xl font-bold">
       < </span> DouglasGonzalez <span class="text-[--lightblue] text-3xl font-bold">/></span>
@@ -50,7 +50,7 @@
         learn from my mistakes and continuously improve my skills.
       </p>
     </div>
-    <div class="social-media lg:mb-0 mb-9">
+    <div class="social-media lg:mb-0 mb-9 flex items-center">
       <a href="https://github.com/DouglasG04">
         <fa-icon class="social-icon text-2xl" [icon]="gitHub"></fa-icon> GitHub
       </a>
@@ -59,6 +59,9 @@
       </a>
       <a href="mailto:dg367077@gmail.com" class="mx-4">
         <fa-icon class="social-icon text-2xl" [icon]="mail"> </fa-icon> Email
+      </a>
+      <a download href="assets/pdf/DouglasGonzalez_Resume2023.pdf">
+        <fa-icon class="social-icon text-2xl" [icon]="pdf"> </fa-icon> Resume
       </a>
     </div>
   </div>
@@ -73,18 +76,9 @@
   <app-technologies></app-technologies>
 
 </div>
-<footer class="flex lg:justify-evenly items-center lg:flex-row flex-col lg:h-[10vh] bg-[--body2]">
-  <div>
-    <a class="text-2xl text-white font-bold" id="home">
-      <span class="text-[--lightblue] text-3xl font-bold">
-        < </span> DouglasGonzalez <span class="text-[--lightblue] text-3xl font-bold">/></span>
-    </a>
-  </div>
+<footer class="flex justify-center items-center  lg:h-[10vh] bg-[--body2]">
   <div class="flex lg:flex-col justify-center items-center">
     <p class="font-bold lg:mr-0 mr-2">Develop with</p>
     <fa-icon class="text-5xl" [icon]="devWith"></fa-icon>
-  </div>
-  <div>
-    <p>© 2023 All rights reserved.</p>
   </div>
 </footer>
