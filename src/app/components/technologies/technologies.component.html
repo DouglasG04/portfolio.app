@@ -1,0 +1,12 @@
+<section id="skills" class="py-28">
+  <h2 class="border-b-2 text-3xl font-semibold">Technologies</h2>
+
+  <div class="grid md:grid-cols-2 grid-cols-1 mt-3 gap-3">
+    <div class="cards" *ngFor="let s of skills">
+
+      <fa-icon class="icon" [icon]="s.icon"></fa-icon>
+      <footer> {{s.description}} </footer>
+    </div>
+  </div>
+</section>
+ 

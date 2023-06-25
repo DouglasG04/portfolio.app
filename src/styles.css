@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+*{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+html, body{
+  background-color: #1c1c1e;
+  color: #fff;
+}
+
+
+:root{
+  --purple: #c86bfa;
+  --yellow: #ffe566;
+  --red: #e5383b;
+  --lightblue: #b2c9ff;
+  --blue: #6096ba;
+  --green: #509724;
+}
