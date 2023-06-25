@@ -5,9 +5,15 @@ module.exports = {
     './src/**/*.{html,js}',
   ],
   theme: {
-    extend: {
+    theme: {
+      container: {
+        center: true,
+      },
+      extend: {
+
+      },
     },
-  },
-  plugins: [],
+    plugins: [],
+  }
 }
 

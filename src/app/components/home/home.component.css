@@ -5,10 +5,28 @@ header {
   left: 0;
   z-index: 1030;
   width: 100%;
-  background-color: #1c1c1e;
+  background-color: var(--body1);
   box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.75);
+}
+
+.hero {
+  height: 70vh;
+  background-image: linear-gradient(0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)), url(../../../assets/hero2.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding-top: 10px;
+}
+
+@media screen and (max-width: 576px) {
+  .hero {
+    margin-top: 50px;
+    height: 40vh;
+  }
 }
 
 .nav-items-desktop a {
@@ -19,7 +37,7 @@ header {
 }
 
 nav a:hover {
-  color: var(--purple);
+  color: var(--lightblue);
 }
 
 
@@ -33,7 +51,7 @@ nav a:hover {
 
 
 .nav-items-mobile a:hover {
-  color: var(--blue);
+  color: var(--tinblue);
 }
 
 
@@ -53,8 +71,8 @@ nav a:hover {
   top: 0;
   right: 0;
   bottom: 0;
-  background: #000000;
-  height: 900px;
+  background: #343a40;
+  height: 960px;
   width: 250px;
   transition: transform 0.3s ease;
   transform: translateX(100%);
@@ -86,13 +104,13 @@ nav a:hover {
 
 #about h1 {
   font-size: 35px;
-  color: var(--purple);
+  color: var(--lightblue);
   font-weight: 600;
 }
 
 .social-media a {
   padding: 8px 12px;
-  background-color: var(--purple);
+  background-color: var(--strongblue);
   font-weight: 500;
   border-radius: 7px;
   color: #e7eaec;
@@ -103,6 +121,6 @@ nav a:hover {
 
 
 .social-media a:hover {
-  background-color: #7b2cbf;
+  background-color: #27187e;
   transition: all ease-in 0.2s;
 }

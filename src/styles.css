@@ -10,16 +10,18 @@
 }
 
 html, body{
-  background-color: #1c1c1e;
+  background-color: var(--body1);
   color: #fff;
 }
 
-
+.container{
+  margin: 0px auto;
+}
 :root{
-  --purple: #c86bfa;
-  --yellow: #ffe566;
-  --red: #e5383b;
-  --lightblue: #b2c9ff;
-  --blue: #6096ba;
-  --green: #509724;
+  --strongblue: #013a63;
+  --mediumblue: #014f86;
+  --lightblue: #61a5c2;
+  --tinblue: #e3f2fd;
+  --body1: #111827;
+  --body2: #334155;
 }

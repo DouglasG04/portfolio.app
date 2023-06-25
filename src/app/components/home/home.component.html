@@ -1,7 +1,7 @@
-<header id="desktop-header" class="flex justify-between items-center px-6 py-2 animate__animated animate__fadeInDown">
-  <a href="#" class="text-3xl text-white font-bold" id="home">
-    <span class="text-[--purple] text-3xl font-bold">
-      < </span> DouglasGonzalez <span class="text-[--purple] text-3xl font-bold">/></span>
+<header id="desktop-header" class="flex justify-between items-center py-2 animate__animated animate__fadeInDown">
+  <a href="#" class="text-3xl text-white font-bold lg:ml-0 ml-3">
+    <span class="text-[--lightblue] text-3xl font-bold">
+      < </span> DouglasGonzalez <span class="text-[--lightblue] text-3xl font-bold">/></span>
   </a>
   <nav id="nav-desktop" class="hidden md:flex">
     <ul>
@@ -13,9 +13,9 @@
       </li>
     </ul>
   </nav>
-  <nav id="nav-mobile" class="md:hidden flex justify-end">
+  <nav id="nav-mobile" class="md:hidden flex justify-end mr-3">
     <input type="checkbox" id="mobile-menu-toggle" class="hidden">
-    <label for="mobile-menu-toggle" class="cursor-pointer text-[--purple]">
+    <label for="mobile-menu-toggle" class="cursor-pointer text-[--lightblue]">
       <fa-icon [icon]="navbarOpenMobile"></fa-icon>
     </label>
     <div id="mobile-menu">
@@ -28,7 +28,7 @@
         </li>
       </ul>
       <div id="mobile-menu-close">
-        <label for="mobile-menu-toggle" class="cursor-pointer text-[--purple]">
+        <label for="mobile-menu-toggle" class="cursor-pointer text-[--lightblue]">
           <fa-icon [icon]="navBarCloseMobile"></fa-icon>
         </label>
       </div>
@@ -37,33 +37,54 @@
 </header>
 
 <section id="about"
-  class="relative flex flex-col justify-center pt-20 mx-auto lg:w-[80ch] px-12 animate__animated animate__fadeIn animate__delay-2s">
-  <div class="presentation">
-    <p>Hi!</p>
-    <h1>I'm Douglas González Ortiz</h1>
-    <h3 class="italic">Web Developer</h3>
+  class="lg:grid lg:grid-cols-2 grid-cols-1 flex flex-col-reverse  px-12 lg:mt-[52px] animate__animated animate__fadeIn animate__delay-2s lg:h-[70vh] bg-[--body2]">
+  <div class="about-me relative flex flex-col justify-center">
+    <div class="presentation">
+      <p>Hi!</p>
+      <h1>I'm Douglas González Ortiz</h1>
+      <h3 class="italic">Web Developer</h3>
+    </div>
+    <div class="letter-presentation my-5 lg:w-[588px]">
+      <p>Passionate about technology and software development, with skills to analyze and build
+        software solutions for business needs. Proactive, hardworking and autodidact. Skills to work in a team,
+        learn from my mistakes and continuously improve my skills.
+      </p>
+    </div>
+    <div class="social-media lg:mb-0 mb-9">
+      <a href="https://github.com/DouglasG04">
+        <fa-icon class="text-2xl" [icon]="gitHub"></fa-icon> GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/douglas-gonzalez-5a53a91a6/" class="ml-4">
+        <fa-icon class="text-2xl" [icon]="linkeding"></fa-icon> LinkedIn
+      </a>
+      <a href="mailto:dg367077@gmail.com" class="mx-4">
+        <fa-icon class="text-2xl" [icon]="mail"> </fa-icon> Email
+      </a>
+    </div>
   </div>
-  <div class="letter-presentation my-5">
-    <p>Passionate about technology and software development, with skills to analyze and build
-      software solutions for business needs. Proactive, hardworking and autodidact. Skills to work in a team,
-      learn from my mistakes and continuously improve my skills.
-    </p>
-  </div>
-  <div class="social-media">
-    <a href="https://github.com/DouglasG04" class="">
-      <fa-icon class="text-2xl" [icon]="gitHub"></fa-icon> GitHub
-    </a>
-    <a href="https://www.linkedin.com/in/douglas-gonzalez-5a53a91a6/" class="ml-4">
-      <fa-icon class="text-2xl" [icon]="linkeding"></fa-icon> LinkedIn
-    </a>
-    <a href="mailto:dg367077@gmail.com" class="mx-4">
-      <fa-icon class="text-2xl" [icon]="mail"> </fa-icon> Email
-    </a>
-  </div>
-  <div class="animate__animated animate__fadeIn animate__delay-0.2s">
-    <app-experience></app-experience>
-    <app-proyects></app-proyects>
-    <app-technologies></app-technologies>
-  </div>
+  <div class="hero object-cover">
 
+  </div>
 </section>
+
+<div class="container lg:w-[80ch] px-6 animate__animated animate__animated animate__fadeIn animate__delay-2s">
+  <app-experience></app-experience>
+  <app-proyects></app-proyects>
+  <app-technologies></app-technologies>
+
+</div>
+<footer class="flex lg:justify-evenly items-center lg:flex-row flex-col lg:h-[10vh] bg-[--body2]">
+  <div>
+    <a class="text-2xl text-white font-bold" id="home">
+      <span class="text-[--lightblue] text-3xl font-bold">
+        < </span> DouglasGonzalez <span class="text-[--lightblue] text-3xl font-bold">/></span>
+    </a>
+  </div>
+  <div class="flex lg:flex-col justify-center items-center">
+    <p class="font-bold lg:mr-0 mr-2">Develop with</p>
+    <fa-icon class="text-5xl" [icon]="devWith"></fa-icon>
+  </div>
+  <div>
+    <p>© 2023 All rights reserved.</p>
+  </div>
+</footer>
