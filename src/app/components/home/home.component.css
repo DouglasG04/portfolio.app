@@ -27,7 +27,40 @@ header {
     margin-top: 50px;
     height: 40vh;
   }
+
+  .social-media a {
+    padding: 8px 2px;
+  }
+
+  .social-icon {
+    font-size: 0.9rem;
+  }
 }
+
+@media screen and (max-width: 430px) {
+  .social-media a {
+    margin: 0px 1px;
+    padding: 8px 2px;
+  }
+
+}
+
+@media screen and (max-width: 415px) {
+  #mobile-menu {
+    height: 960px;
+    width: 150px !important;
+  }
+}
+
+
+@media screen and (max-width: 380px) {
+  .social-media {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
 
 .nav-items-desktop a {
   color: #fff;
