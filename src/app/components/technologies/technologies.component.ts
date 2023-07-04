@@ -32,7 +32,7 @@ export class TechnologiesComponent {
     },
     {
       icon: faDatabase,
-      description: "SQL"
+      description: "PL SQL Oracle"
     },
     {
       icon: faGit,
