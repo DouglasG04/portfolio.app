@@ -24,7 +24,7 @@ header {
 
 .nav-items-desktop a {
   color: #fff;
-  padding: 0px 10px;
+  padding: 0px 15px;
   cursor: pointer;
   font-weight: 500;
 }
@@ -97,7 +97,7 @@ nav a:hover {
 }
 
 .social-media a {
-  padding: 2px 12px;
+  padding: 3px 12px;
   background-color: var(--strongblue);
   font-weight: 500;
   border-radius: 7px;
@@ -121,7 +121,7 @@ nav a:hover {
   }
 
   .social-media a {
-    padding: 8px 2px;
+    padding: 8px 10px;
   }
 
   .social-icon {
