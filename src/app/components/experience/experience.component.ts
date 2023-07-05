@@ -19,18 +19,20 @@ export class ExperienceComponent {
       icon: 'assets/svg/css3.svg'
     },
     {
-      icon:'assets/svg/csharp.svg'
+      icon: 'assets/svg/csharp.svg'
     },
     {
-      icon:'assets/svg/javascript.svg'
+      icon: 'assets/svg/javascript.svg'
     },
     {
       icon: 'assets/svg/angular.svg'
     },
     {
+      icon: 'assets/svg/tailwind-css.svg'
+    },
+    {
       icon: 'assets/svg/bootstrap.svg'
     },
-
     {
       icon: 'assets/svg/oracle.svg'
     },
