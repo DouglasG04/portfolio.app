@@ -1,6 +1,7 @@
 .cards {
   display: flex;
   flex-direction: column;
+  align-items: center;
   text-align: center;
   padding: 20px 30px;
   background: #343a40;
@@ -20,8 +21,4 @@
 
 .cards footer {
   font-size: 20px;
-}
-
-.cards .icon {
-  font-size: 90px
 }

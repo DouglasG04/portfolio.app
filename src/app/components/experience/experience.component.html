@@ -15,9 +15,9 @@
         quality and functionality of the systems. Use the SCRUM framework and agile methodologies to develop interactive
         educational content and manage projects efficiently.
       </p>
-      <div class="description-tecnologies mt-2">
-        <fa-icon class="px-1 text-2xl text-[--mediumblue]" *ngFor="let item of experienceTecnologies"
-          [icon]="item.icon"></fa-icon>
+      <div class="flex flex-wrap description-tecnologies mt-2">
+        <img *ngFor="let item of experienceTecnologies" class="icon px-1 w-[40px]" 
+        [src]="item.icon">
       </div>
     </div>
   </article>

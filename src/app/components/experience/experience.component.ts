@@ -13,26 +13,29 @@ export class ExperienceComponent {
 
   experienceTecnologies: Experience[] = [
     {
-      icon: faHtml5
+      icon: 'assets/svg/html5.svg'
     },
     {
-      icon: faCss3Alt
+      icon: 'assets/svg/css3.svg'
     },
     {
-      icon: faJs
+      icon:'assets/svg/csharp.svg'
     },
     {
-      icon: faAngular
+      icon:'assets/svg/javascript.svg'
     },
     {
-      icon: faBootstrap
+      icon: 'assets/svg/angular.svg'
+    },
+    {
+      icon: 'assets/svg/bootstrap.svg'
     },
 
     {
-      icon: faDatabase
+      icon: 'assets/svg/oracle.svg'
     },
     {
-      icon: faGit
+      icon: 'assets/svg/git.svg'
     },
   ]
 }

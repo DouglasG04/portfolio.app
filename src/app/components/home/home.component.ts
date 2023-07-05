@@ -12,7 +12,7 @@ export class HomeComponent {
   gitHub = faGithub
   linkeding = faLinkedin
   mail = faEnvelope
-  devWith = faAngular
+  devWith = 'assets/svg/angular.svg'
   pdf = faDownload
 }
 

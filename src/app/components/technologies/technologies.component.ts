@@ -3,6 +3,7 @@ import { TecnologiesSkills } from 'src/app/interfaces/icons.interface';
 import { faDatabase } from '@fortawesome/free-solid-svg-icons';
 import { faHtml5, faCss3Alt, faJs, faGit, faAngular, faBootstrap } from '@fortawesome/free-brands-svg-icons';
 
+
 @Component({
   selector: 'app-technologies',
   templateUrl: './technologies.component.html',
@@ -11,31 +12,36 @@ import { faHtml5, faCss3Alt, faJs, faGit, faAngular, faBootstrap } from '@fortaw
 export class TechnologiesComponent {
   skills: TecnologiesSkills[] = [
     {
-      icon: faHtml5,
+      icon: 'assets/svg/html5.svg',
       description: "HTML",
     },
     {
-      icon: faCss3Alt,
+      icon: 'assets/svg/css3.svg',
       description: "CSS"
     },
     {
-      icon: faBootstrap,
-      description: "Bootstrap"
+      icon: 'assets/svg/tailwind-css.svg',
+      description: "Tailwindcss"
     },
+
     {
-      icon: faJs,
+      icon: 'assets/svg/javascript.svg',
       description: "JavaScript"
     },
     {
-      icon: faAngular,
+      icon: 'assets/svg/csharp.svg',
+      description: "C Sharp"
+    },
+    {
+      icon: 'assets/svg/angular.svg',
       description: "Angular"
     },
     {
-      icon: faDatabase,
+      icon: 'assets/svg/oracle.svg',
       description: "PL SQL Oracle"
     },
     {
-      icon: faGit,
+      icon: 'assets/svg/git.svg',
       description: "Git"
     },
   ]
