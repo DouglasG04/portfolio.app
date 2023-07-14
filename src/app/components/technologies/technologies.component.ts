@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
 import { TecnologiesSkills } from 'src/app/interfaces/icons.interface';
-import { faDatabase } from '@fortawesome/free-solid-svg-icons';
-import { faHtml5, faCss3Alt, faJs, faGit, faAngular, faBootstrap } from '@fortawesome/free-brands-svg-icons';
 
 
 @Component({

@@ -2,39 +2,24 @@
   <h2 class="border-b-2 text-3xl font-semibold">Projects</h2>
 
   <div class="grid md:grid-cols-2 grid-cols-1 mt-3 gap-3">
-    <div class="card-project rounded-md flex flex-col border-2 bg-white border-[--body2]">
+    <div class="card-project rounded-md flex flex-col justify-between bg-white border-[--body2]" *ngFor="let p of projects">
       <picture class="w-full object-cover">
-        <img src="assets/project1.PNG" alt="project-1" class="opacity-100 w-full h-[160px]">
+        <img [src]="p.img" [alt]="p.title" class="opacity-100 w-full h-[160px]">
       </picture>
       <div class="flex flex-col mt-4 px-4 text-black">
-        <h4 class="text-2xl font-bold">Blackjack Game</h4>
-        <p>Enjoy the classic card game Blackjack 21 as you compete against the machine!</p>
-        <footer class="flex justify-between w-full items-center">
-          <div>
-            <fa-icon class="px-1 text-2xl text-[--mediumblue]" [icon]="projectsWHTML"></fa-icon>
-            <fa-icon class="px-1 text-2xl text-[--mediumblue]" [icon]="projectsWCss"></fa-icon>
-            <fa-icon class="px-1 text-2xl text-[--mediumblue]" [icon]="projectsWJs"></fa-icon>
+        <h4 class="text-2xl font-bold">{{p.title}}</h4>
+        <p>{{p.description}}</p>
+        <footer class="flex justify-between w-full items-center py-3">
+          <div class="flex p-0">
+            <img *ngFor="let img of p.icons" [src]="img" class="w-[25px]">
           </div>
-          <div>
-            <a href="https://github.com/DouglasG04/mini-projects" target="_blank" class="underline hover:text-[--strongblue] font-semibold transition-all duration-200 ease-in">Code</a>
-          </div>
-        </footer>
-      </div>
-    </div>
-
-    <div class="card-project rounded-md flex flex-col border-2 bg-white">
-      <picture class="w-full object-cover">
-        <img src="assets/coming-soon.png" alt="project-1" class="opacity-100 w-full h-[160px]">
-      </picture>
-      <div class="flex flex-col justify-between h-full mt-4 px-4 text-black">
-        <h4 class="text-2xl font-bold">Comming Soon</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, odio.</p>
-        <footer class="flex justify-between w-full items-center">
-          <div>
-            <fa-icon class="px-1 text-2xl text-[--mediumblue]" [icon]="commingSoon"></fa-icon>
-          </div>
-          <div>
-            <a href="" class="underline hover:text-[--strongblue] font-semibold transition-all duration-200 ease-in">Code</a>
+          <div class="space-y-3">
+            <a [href]="p.links[0]" target="_blank"
+              class="underline hover:text-[--mediumblue] font-semibold transition-all duration-200 ease-in m-2 text-end">Code
+            </a>
+            <a [href]="p.links[1]" *ngIf="p.links.length >= 2" target="_blank"
+              class="underline hover:text-[--mediumblue] font-semibold transition-all duration-200 ease-in">View
+            </a>
           </div>
         </footer>
       </div>
