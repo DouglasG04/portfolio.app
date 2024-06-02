@@ -1,6 +1,6 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 *{
   box-sizing: border-box;
@@ -17,6 +17,7 @@ html, body{
 .container{
   margin: 0px auto;
 }
+
 :root{
   --strongblue: #013a63;
   --mediumblue: #014f86;

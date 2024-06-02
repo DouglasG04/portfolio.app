@@ -1,15 +1,3 @@
-header {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1030;
-  width: 100%;
-  background-color: var(--body1);
-  box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.75);
-}
 
 .hero {
   height: 70vh;
@@ -35,66 +23,6 @@ nav a:hover {
 }
 
 
-.nav-items-mobile a {
-  padding: 0px 10px;
-  cursor: pointer;
-  font-weight: 500;
-  color: var(--lightblue);
-  text-decoration: none;
-}
-
-
-.nav-items-mobile a:hover {
-  color: var(--tinblue);
-}
-
-#nav-mobile:not(:checked) #mobile-menu {
-  display: none;
-}
-
-#mobile-menu-toggle:checked~#mobile-menu {
-  display: block;
-  transform: translateX(0%);
-}
-
-#mobile-menu {
-  position: fixed;
-  z-index: 111;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  background: #343a40;
-  height: 960px;
-  width: 250px;
-  transition: transform 0.3s ease;
-  transform: translateX(100%);
-}
-
-#mobile-menu li a {
-  margin: 10px 0px;
-}
-
-
-#mobile-menu-close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
-
-#mobile-menu-close label {
-  cursor: pointer;
-}
-
-#mobile-menu-close label:hover {
-  color: var(--blue);
-}
-
-
-#about h1 {
-  font-size: 35px;
-  color: var(--lightblue);
-  font-weight: 600;
-}
 
 .social-media a {
   padding: 3px 12px;
@@ -111,6 +39,28 @@ nav a:hover {
 .social-media a:hover {
   background-color: #27187e;
   transition: all ease-in 0.2s;
+}
+
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px 30px;
+  background: #343a40;
+  box-shadow: 0 0 10px #00000080;
+  border-radius: 10px;
+  transition: all .2s ease-in;
+}
+
+
+.cards:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: 2px 4px 5px #000000bf;
+  -webkit-box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, .75);
+  -moz-box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, .75);
 }
 
 

@@ -9,10 +9,20 @@ export interface TecnologiesSkills {
   description: string;
 }
 
+
+
 export interface Projects {
   img: string;
   title: string;
   description: string;
   icons: string[] | any;
   links: string[] | any;
+}
+
+export interface WorkExperience {
+  companyName: string;
+  position: string;
+  period: string;
+  description: string;
+  technologies: TecnologiesSkills[];
 }
