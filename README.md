@@ -1,6 +1,6 @@
 # Douglas González Ortiz | Portfolio 🌐
 
-![Portfolio Preview](https://douglasg04.github.io/portfolio.app/assets/preview-image.jpg)
+![Portfolio Preview](https://douglasg04.github.io/portfolio.app/assets/preview.jpg)
 
 Welcome to my personal portfolio, a space where I showcase my skills as a **Junior Web Developer** and the projects I've worked on. This project is built with **Angular** and **Tailwind CSS** to create a fast and responsive experience.
 
@@ -20,17 +20,17 @@ Visit my portfolio at [DouglasG04 GitHub Pages](https://douglasg04.github.io/por
 
 The project follows the standard Angular structure with some additional folders:
 
+```bash
 portfolio.app/
-│
 ├── docs/                  # Static files for GitHub Pages deployment
 ├── src/                   # Application source code
-│   ├── app/               # Angular components and services
+│   ├── components/        # Angular components and services
 │   ├── assets/            # Resources like images, SVGs, and additional CSS
-│   ├── environments/      # Environment configurations
 │   └── index.html         # Main HTML file
 ├── angular.json           # Angular configuration
 ├── tailwind.config.js     # Tailwind CSS configuration
 └── package.json           # Dependencies and scripts
+```
 
 ## 💻 Developing Locally
 
