@@ -1,27 +1,68 @@
-# BestPortfolioAngular
+# Douglas González Ortiz | Portfolio 🌐
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.6.
+![Portfolio Preview](https://douglasg04.github.io/portfolio.app/assets/preview-image.jpg)
 
-## Development server
+Welcome to my personal portfolio, a space where I showcase my skills as a **Junior Web Developer** and the projects I've worked on. This project is built with **Angular** and **Tailwind CSS** to create a fast and responsive experience.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🚀 Live Demo
 
-## Code scaffolding
+Visit my portfolio at [DouglasG04 GitHub Pages](https://douglasg04.github.io/portfolio.app) to explore my projects and skills.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 🛠️ Technologies Used
 
-## Build
+- **Angular** (v15.2.6)
+- **Tailwind CSS** (for quick and custom styling)
+- **TypeScript** (for static typing)
+- **GitHub Pages** (for site deployment)
+- **Animate.css** (for simple animations)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## 📂 Project Structure
 
-## Running unit tests
+The project follows the standard Angular structure with some additional folders:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+portfolio.app/
+│
+├── docs/                  # Static files for GitHub Pages deployment
+├── src/                   # Application source code
+│   ├── app/               # Angular components and services
+│   ├── assets/            # Resources like images, SVGs, and additional CSS
+│   ├── environments/      # Environment configurations
+│   └── index.html         # Main HTML file
+├── angular.json           # Angular configuration
+├── tailwind.config.js     # Tailwind CSS configuration
+└── package.json           # Dependencies and scripts
 
-## Running end-to-end tests
+## 💻 Developing Locally
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### 1. Clone the Repository
+```bash 
+git clone https://github.com/DouglasG04/portfolio.app.git 
+```
 
-## Further help
+### 2. Install Dependencies
+```bash 
+npm install
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### 3. Start server
+```bash 
+ng serve
+```
+
+## 📦 Building for Production
+```bash 
+ng build
+```
+
+## 🔬 Running Unit Tests
+```bash 
+ng test
+```
+
+## 🌐 Deploying to GitHub Pages
+
+This project is configured to be deployed on GitHub Pages. The deployment files are located in the docs/ folder. Make sure that GitHub Pages is set to point to this folder in your repository settings.
+
+## 📧 Contact
+
+Connect with me on [LinkedIn](https://www.linkedin.com/in/douglas-gonzalez-5a53a91a6) or send me an email at dg367077@gmail.com.
