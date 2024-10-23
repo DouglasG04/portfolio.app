@@ -93,13 +93,6 @@ nav a:hover {
 
 }
 
-@media screen and (max-width: 415px) {
-  #mobile-menu {
-    height: 960px;
-    width: 150px !important;
-  }
-}
-
 
 @media screen and (max-width: 380px) {
   .social-media {

@@ -19,12 +19,20 @@ export class HomeComponent {
   navbarOpenMobile = faBars
   navBarCloseMobile = faClose
   gitHub = faGithub
-  linkeding = faLinkedin
+  linkedin = faLinkedin
   mail = faEnvelope
   pdf = faDownload
 
 
   projects: Projects[] = [
+    {
+      img: 'assets/nexiteproject.png',
+      title: 'Nexite',
+      description: 'Nexite is a new founded company that offers services designed to help companies pages and systems.',
+      icons: ['assets/svg/astro.svg', 'assets/svg/tailwind-css.svg'],
+      links: ['https://bitbucket.org/nexite_app/nexitepage/src/master/', 'https://nexite.app/']
+    }
+    ,
     {
       img: 'assets/project1.PNG',
       title: 'Blackjack Game',
@@ -48,42 +56,7 @@ export class HomeComponent {
     }
   ]
 
-  skills: TecnologiesSkills[] = [
-    
-    {
-      icon: 'assets/svg/html5.svg',
-      description: "HTML",
-    },
-    {
-      icon: 'assets/svg/css3.svg',
-      description: "CSS"
-    },
-    {
-      icon: 'assets/svg/tailwind-css.svg',
-      description: "Tailwindcss"
-    },
 
-    {
-      icon: 'assets/svg/javascript.svg',
-      description: "JavaScript"
-    },
-    {
-      icon: 'assets/svg/csharp.svg',
-      description: "C Sharp"
-    },
-    {
-      icon: 'assets/svg/angular.svg',
-      description: "Angular"
-    },
-    {
-      icon: 'assets/svg/oracle.svg',
-      description: "PL SQL Oracle"
-    },
-    {
-      icon: 'assets/svg/git.svg',
-      description: "Git"
-    },
-  ]
 
   workExperience: WorkExperience[] = [
     {
@@ -144,8 +117,46 @@ export class HomeComponent {
           icon: 'assets/svg/git.svg',
           description: "Git logo"
         },
-        
+
       ]
+    },
+  ]
+  work: any;
+
+  skills: TecnologiesSkills[] = [
+
+    {
+      icon: 'assets/svg/astro.svg',
+      description: "Astro",
+    },
+    {
+      icon: 'assets/svg/tailwind-css.svg',
+      description: "Tailwind CSS"
+    },
+
+    {
+      icon: 'assets/svg/javascript.svg',
+      description: "JavaScript"
+    },
+    {
+      icon: 'assets/svg/csharp.svg',
+      description: "C Sharp"
+    },
+    {
+      icon: 'assets/svg/angular.svg',
+      description: "Angular"
+    },
+    {
+      icon: 'assets/svg/react.svg',
+      description: "React"
+    },
+    {
+      icon: 'assets/svg/oracle.svg',
+      description: "PL SQL Oracle"
+    },
+    {
+      icon: 'assets/svg/git.svg',
+      description: "Git"
     },
   ]
 }
