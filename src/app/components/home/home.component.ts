@@ -31,8 +31,14 @@ export class HomeComponent {
       description: 'Nexite is a new founded company that offers services designed to help companies pages and systems.',
       icons: ['assets/svg/astro.svg', 'assets/svg/tailwind-css.svg'],
       links: ['https://bitbucket.org/nexite_app/nexitepage/src/master/', 'https://nexite.app/']
-    }
-    ,
+    },
+    {
+      img: 'assets/project3.jpg',
+      title: 'Kuppa',
+      description: 'Kuppa is a website of a fictitious company created at my university to solicit tourist services for a fictitious company.',
+      icons: ['assets/svg/css3.svg', 'assets/svg/javascript.svg', 'assets/svg/mongodb.svg'],
+      links: ['https://github.com/DouglasG04/proyecto1-grupo2.git']
+    },
     {
       img: 'assets/project1.PNG',
       title: 'Blackjack Game',
@@ -47,6 +53,7 @@ export class HomeComponent {
       icons: ['assets/svg/vitejs.svg'],
       links: ['https://github.com/DouglasG04/mini-projects', 'https://todolistdgo.netlify.app/']
     },
+
     {
       img: 'assets/comming-soon.png',
       title: 'Comming Soon',
