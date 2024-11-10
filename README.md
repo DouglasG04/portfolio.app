@@ -10,7 +10,7 @@ Visit my portfolio at [DouglasG04 GitHub Pages](https://douglasg04.github.io/por
 
 ## 🛠️ Technologies Used
 
-- **Angular** (v15.2.6)
+- **Angular** (v18)
 - **Tailwind CSS** (for quick and custom styling)
 - **TypeScript** (for static typing)
 - **GitHub Pages** (for site deployment)
