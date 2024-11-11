@@ -10,12 +10,6 @@
   padding-top: 10px;
 }
 
-.nav-items-desktop a {
-  color: #fff;
-  padding: 0px 15px;
-  cursor: pointer;
-  font-weight: 500;
-}
 
 nav a:hover {
   color: var(--lightblue);
