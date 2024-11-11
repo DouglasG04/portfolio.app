@@ -1,23 +1,23 @@
-<header id="desktop-header"
-  class="flex justify-center items-center mx-auto py-5 sticky top-0 w-full xl:w-[1120px] z-10">
+<header id="desktop-header" class="flex justify-center items-center mx-auto py-5 sticky top-0 w-full xl:w-[1120px] z-10">
   <nav id="nav-desktop" aria-label="Primary Navigation"
     class="flex border border-black rounded-full px-3 py-2 flex-row items-center bg-neutral-200 dark:bg-black/50 backdrop-blur-2xl">
     <ul class="flex space-x-6">
-      <li class="nav-items-desktop">
-        <a href="#about" class="text-center text-base sm:text-lg" aria-label="Home">Home</a>
-        <a href="#experience" class="text-center text-base sm:text-lg" aria-label="Experience">Experience</a>
-        <a href="#projects" class="text-center text-base sm:text-lg" aria-label="Projects">Projects</a>
-        <a href="#skills" class="text-center text-base sm:text-lg" aria-label="Skills">Skills</a>
-      </li>
+      @for (link of ['Home', 'Experience', 'Projects', 'Skills']; track link) {
+        <li class="nav-items-desktop">
+          <a [href]="'#' + link.toLowerCase()" class="text-center text-base sm:text-lg" [attr.aria-label]="link">{{ link }}</a>
+        </li>
+      }
     </ul>
   </nav>
 </header>
+
+
 
 <main>
 
 
   <section id="about"
-    class="lg:grid lg:grid-cols-2 grid-cols-1 flex flex-col-reverse px-12 lg:mt-[20px] animate__animated animate__fadeIn animate__delay-2s lg:h-[70vh] bg-[--body2]">
+    class="lg:grid lg:grid-cols-2 grid-cols-1 flex flex-col-reverse px-6 lg:px-12 lg:mt-[20px] animate__animated animate__fadeIn animate__delay-2s lg:h-[70vh] bg-[--body2]">
     <div class="about-me relative flex flex-col justify-center">
       <div class="presentation lg:mt-0 mt-3">
         <div class="flex gap-4 mb-4">
@@ -40,7 +40,7 @@
         <h1 class="md:text-[55px] text-[35px] text-[--lightblue] font-semibold">Hey, I'm Douglas González Ortiz</h1>
         <h2 class="italic md:text-[30px] text-[20px]">Junior Web Developer</h2>
       </div>
-      <div class="letter-presentation my-5 md:w-[535px] xl:w-[655px]">
+      <div class="letter-presentation my-5 w-full lg:w-[90%] xl:w-[85%]">
         <p>Passionate about technology and software development, with skills to analyze and build software solutions for
           business needs. Proactive, hardworking, and autodidact. Skills to work in a team, learn from my mistakes, and
           continuously improve my skills.</p>
@@ -61,9 +61,10 @@
       </div>
     </div>
     <aside class="hero object-cover">
-
+      <!-- Aquí podrías colocar el contenido que quieres en el área de hero -->
     </aside>
   </section>
+
 
   <div class="container lg:w-[100ch] px-6 animate__animated animate__animated animate__fadeIn animate__delay-2s">
 
@@ -72,75 +73,85 @@
           src="assets/svg/briefcase.svg" alt="work-experience icon"> Work experience
       </h2>
 
-      <div class="workexperiencies py-4" *ngFor="let work of workExperience">
+      <div class="workexperiencies py-4">
+        @for (work of workExperience; track work.companyName) {
         <article class="card-experience flex flex-col items-center rounded-md mt-3 text-black px-2 py-8 bg-[--tinblue]"
           role="listitem">
           <div class="flex flex-col md:flex-row md:justify-between justify-center items-center w-full px-6">
             <div class="md:text-start text-center">
-              <h3 class="text-2xl font-bold">{{work.companyName}}</h3>
-              <h3 class="text-lg font-semibold italic text-[--strongblue]">{{work.position}}</h3>
+              <h3 class="text-2xl font-bold">{{ work.companyName }}</h3>
+              <h3 class="text-lg font-semibold italic text-[--strongblue]">{{ work.position }}</h3>
             </div>
-            <p class="font-semibold text-lg">{{work.period}}</p>
+            <p class="font-semibold text-lg">{{ work.period }}</p>
           </div>
           <div class="description px-6 pt-2">
-            <p class="text-lg">{{work.description}}</p>
-            <footer class="flex flex-wrap description-tecnologies mt-2">
-              <div *ngFor="let tech of work.technologies">
+            <p class="text-lg">{{ work.description }}</p>
+            <footer class="flex flex-wrap description-technologies mt-2">
+              @for (tech of work.technologies; track tech.icon) {
+              <div>
                 <img class="icon px-1 w-[40px]" [src]="tech.icon" [alt]="tech.description">
               </div>
+              }
             </footer>
           </div>
         </article>
+        }
       </div>
     </section>
 
 
 
     <section id="projects" class="pt-28">
-      <h2 class="text-4xl font-semibold flex items-center gap-x-3"><img class="w-[24px] h-[24px]"
-          src="assets/svg/projects.svg" alt="projects icon"> Projects</h2>
-
+      <h2 class="text-4xl font-semibold flex items-center gap-x-3">
+        <img class="w-[24px] h-[24px]" src="assets/svg/projects.svg" alt="projects icon"> Projects
+      </h2>
+    
       <div class="grid md:grid-cols-2 grid-cols-1 mt-6 gap-6">
-        <div class="card-project rounded-md flex flex-col justify-between bg-white border-[--body2] md:p-0 p-3"
-          *ngFor="let p of projects">
-          <picture class="w-full object-cover mb-4">
-            <img [src]="p.img" [alt]="p.title" class="opacity-100 w-full h-[185px]">
-          </picture>
-          <div class="flex flex-col text-black flex-1 p-6">
-            <h4 class="text-3xl font-bold mb-2">{{p.title}}</h4>
-            <p class="text-lg mb-4 flex-1">{{p.description}}</p>
-
-            <footer class="flex justify-between w-full items-center pt-3">
-              <div class="flex p-0 space-x-2">
-                <img *ngFor="let img of p.icons" [src]="img" class="icon w-[35px] h-[35px]">
-              </div>
-              <div class="space-y-2">
-                <a [href]="p.links[0]" target="_blank"
-                  class="underline hover:text-[--mediumblue] font-semibold transition-all duration-200 ease-in mr-2">Code
-                </a>
-                <a [href]="p.links[1]" *ngIf="p.links.length >= 2" target="_blank"
-                  class="underline hover:text-[--mediumblue] font-semibold transition-all duration-200 ease-in">View
-                </a>
-              </div>
-            </footer>
+        @for (p of projects; track p.title) {
+          <div class="card-project rounded-md flex flex-col justify-between bg-white border-[--body2] md:p-0 p-3">
+            <picture class="w-full object-cover mb-4">
+              <img [src]="p.img" [alt]="p.title" class="opacity-100 w-full h-[185px]">
+            </picture>
+            <div class="flex flex-col text-black flex-1 p-6">
+              <h4 class="text-3xl font-bold mb-2">{{ p.title }}</h4>
+              <p class="text-lg mb-4 flex-1">{{ p.description }}</p>
+    
+              <footer class="flex justify-between w-full items-center pt-3">
+                <div class="flex p-0 space-x-2">
+                  @for (img of p.icons; track img) {
+                    <img [src]="img" class="icon w-[35px] h-[35px]">
+                  }
+                </div>
+                <div class="space-y-2">
+                  <a [href]="p.links[0]" target="_blank" class="underline hover:text-[--mediumblue] font-semibold transition-all duration-200 ease-in mr-2">Code</a>
+                  @if (p.links.length >= 2) {
+                    <a [href]="p.links[1]" target="_blank" class="underline hover:text-[--mediumblue] font-semibold transition-all duration-200 ease-in">View</a>
+                  }
+                </div>
+              </footer>
+            </div>
           </div>
-        </div>
+        }
       </div>
     </section>
+    
 
 
     <section id="skills" class="py-28 max-w-[800px] mx-auto">
       <h2 class="text-3xl font-semibold flex items-center gap-x-3">
         <img class="w-[24px] h-[24px]" src="assets/svg/ico.svg" alt="technologies icon">Technologies
       </h2>
-
+    
       <div class="grid md:grid-cols-2 grid-cols-1 mt-6 gap-8">
-        <div class="cards flex flex-col items-center p-6 bg-[--darkgray] rounded-md" *ngFor="let s of skills">
-          <img class="icon w-[150px] h-[150px] mb-2" [src]="s.icon" [alt]="s.description">
-          <footer class="text-xl font-semibold text-white">{{ s.description }}</footer>
-        </div>
+        @for (s of skills; track s.icon) {
+          <div class="cards flex flex-col items-center p-6 bg-[--darkgray] rounded-md">
+            <img class="icon w-[150px] h-[150px] mb-2" [src]="s.icon" [alt]="s.description">
+            <footer class="text-xl font-semibold text-white">{{ s.description }}</footer>
+          </div>
+        }
       </div>
     </section>
+    
 
 
   </div>
