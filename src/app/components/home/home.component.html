@@ -13,13 +13,15 @@
 
 <main>
   <section id="about"
-    class="lg:grid lg:grid-cols-2 grid-cols-1 flex flex-col-reverse px-6 lg:px-12 lg:mt-[20px] animate__animated animate__fadeIn animate__delay-2s md:h-[80vh] lg:h-[70vh] bg-[--body2]">
-    <div class="about-me relative flex flex-col justify-center">
+    class="grid grid-cols-1 lg:grid-cols-2 px-4 sm:px-6 md:px-8 lg:px-12 mt-6 gap-6 animate__animated animate__fadeIn bg-[--body2]">
+
+    <!-- TEXTO -->
+    <div class="about-me flex flex-col justify-center">
       <div class="presentation lg:mt-0 mt-3">
-        <div class="flex gap-4 mb-4">
-          <img class="rounded-full shadow-lg w-[100px] h-[100px]" src="assets/PassportPhoto.png"
-            alt="Portrait of Douglas González Ortiz" id="home">
-          <a href="linkedin.com/in/douglas-gonzález-5a53a91a6" target="_blank" rel="noopener"
+        <div class="flex flex-wrap gap-4 mb-4 items-center">
+          <img class="rounded-full shadow-lg w-[80px] h-[80px] md:w-[100px] md:h-[100px]" src="assets/PassportPhoto.png"
+            alt="Portrait of Douglas González Ortiz" id="home" />
+          <a href="https://www.linkedin.com/in/douglas-gonz%C3%A1lez-5a53a91a6/" target="_blank" rel="noopener"
             aria-label="LinkedIn Profile" class="flex items-center transition md:justify-center md:hover:scale-105">
             <div class="flex items-center">
               <span class="relative inline-flex overflow-hidden rounded-full p-[1px]">
@@ -33,31 +35,35 @@
             </div>
           </a>
         </div>
-        <h1 class="md:text-[55px] text-[35px] text-[--lightblue] font-semibold">Hey, I'm Douglas González Ortiz</h1>
-        <h2 class="italic md:text-[30px] text-[20px]">Junior Web Developer</h2>
-      </div>
-      <div class="letter-presentation my-5 w-full lg:w-[90%] xl:w-[85%]">
-        <p>Passionate about technology and software development, with skills to analyze and build software solutions for
-          business needs. Proactive, hardworking, and autodidact. Skills to work in a team, learn from my mistakes, and
-          continuously improve my skills.</p>
-      </div>
-      <div class="social-media lg:mb-0 mb-9 flex items-center" aria-label="Social Media Links">
-        <a href="https://github.com/DouglasG04" aria-label="GitHub Profile">
-          <fa-icon class="social-icon text-2xl" [icon]="gitHub"></fa-icon> GitHub
-        </a>
-        <a href="https://www.linkedin.com/in/douglas-gonz%C3%A1lez-5a53a91a6/" class="ml-4" aria-label="LinkedIn Profile">
-          <fa-icon class="social-icon text-2xl" [icon]="linkedin"></fa-icon> LinkedIn
-        </a>
-        <a href="mailto:dg367077@gmail.com" class="mx-4" aria-label="Email Douglas">
-          <fa-icon class="social-icon text-2xl" [icon]="mail"> </fa-icon> Email
-        </a>
-        <a download href="assets/pdf/DouglasGonzalez_Resume2024.pdf" target="_blank" aria-label="Download Resume">
-          <fa-icon class="social-icon text-2xl" [icon]="pdf"></fa-icon> Resume
-        </a>
+
+        <h1 class="text-[28px] sm:text-[35px] md:text-[55px] text-[--lightblue] font-semibold leading-tight">Hey, I'm
+          Douglas González Ortiz</h1>
+        <h2 class="italic text-[18px] sm:text-[20px] md:text-[30px] mb-4">Junior Web Developer</h2>
+        <p class="text-base sm:text-lg leading-relaxed mb-6">Passionate about technology and software development, with
+          skills to analyze and build software solutions for business needs. Proactive, hardworking, and autodidact.
+          Skills to work in a team, learn from my mistakes, and continuously improve my skills.</p>
+
+        <div class="social-media flex flex-wrap gap-2 sm:gap-3 md:gap-4 justify-start items-center">
+          <a href="https://github.com/DouglasG04" class="flex items-center gap-2" aria-label="GitHub Profile">
+            <fa-icon class="social-icon text-2xl" [icon]="gitHub"></fa-icon> GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/douglas-gonz%C3%A1lez-5a53a91a6/" class="flex items-center gap-2"
+            aria-label="LinkedIn Profile">
+            <fa-icon class="social-icon text-2xl" [icon]="linkedin"></fa-icon> LinkedIn
+          </a>
+          <a href="mailto:dg367077@gmail.com" class="flex items-center gap-2" aria-label="Email Douglas">
+            <fa-icon class="social-icon text-2xl" [icon]="mail"> </fa-icon> Email
+          </a>
+          <a download href="assets/pdf/DouglasGonzalez_Resume2024.pdf" class="flex items-center gap-2"
+            aria-label="Download Resume">
+            <fa-icon class="social-icon text-2xl" [icon]="pdf"></fa-icon> Resume
+          </a>
+        </div>
       </div>
     </div>
-    <aside class="hero object-cover">
-    
+
+    <!-- IMAGEN HERO -->
+    <aside class="hero w-full h-[40vh] sm:h-[50vh] md:h-[60vh] lg:h-[70vh] rounded-md">
     </aside>
   </section>
 
@@ -99,48 +105,50 @@
       <h2 class="text-4xl font-semibold flex items-center gap-x-3">
         <img class="w-[24px] h-[24px]" src="assets/svg/projects.svg" alt="projects icon"> Projects
       </h2>
-    
+
       <div class="grid md:grid-cols-2 grid-cols-1 mt-6 gap-6">
         @for (p of projects; track p.title) {
-          <div class="card-project rounded-md flex flex-col justify-between bg-white border-[--body2] md:p-0 p-3">
-            <picture class="w-full object-cover mb-4">
-              <img [src]="p.img" [alt]="p.title" class="opacity-100 w-full h-[185px]">
-            </picture>
-            <div class="flex flex-col text-black flex-1 p-6">
-              <h4 class="text-3xl font-bold mb-2">{{ p.title }}</h4>
-              <p class="text-lg mb-4 flex-1">{{ p.description }}</p>
-    
-              <footer class="flex justify-between w-full items-center pt-3">
-                <div class="flex p-0 space-x-2">
-                  @for (img of p.icons; track img) {
-                    <img [src]="img" class="icon w-[35px] h-[35px]">
-                  }
-                </div>
-                <div class="space-y-2">
-                  <a [href]="p.links[0]" target="_blank" class="underline hover:text-[--mediumblue] font-semibold transition-all duration-200 ease-in mr-2">Code</a>
-                  @if (p.links.length >= 2) {
-                    <a [href]="p.links[1]" target="_blank" class="underline hover:text-[--mediumblue] font-semibold transition-all duration-200 ease-in">View</a>
-                  }
-                </div>
-              </footer>
-            </div>
+        <div class="card-project rounded-md flex flex-col justify-between bg-white border-[--body2] md:p-0 p-3">
+          <picture class="w-full object-cover mb-4">
+            <img [src]="p.img" [alt]="p.title" class="opacity-100 w-full h-[185px]">
+          </picture>
+          <div class="flex flex-col text-black flex-1 p-6">
+            <h4 class="text-3xl font-bold mb-2">{{ p.title }}</h4>
+            <p class="text-lg mb-4 flex-1">{{ p.description }}</p>
+
+            <footer class="flex justify-between w-full items-center pt-3">
+              <div class="flex p-0 space-x-2">
+                @for (img of p.icons; track img) {
+                <img [src]="img" class="icon w-[35px] h-[35px]">
+                }
+              </div>
+              <div class="space-y-2">
+                <a [href]="p.links[0]" target="_blank"
+                  class="underline hover:text-[--mediumblue] font-semibold transition-all duration-200 ease-in mr-2">Code</a>
+                @if (p.links.length >= 2) {
+                <a [href]="p.links[1]" target="_blank"
+                  class="underline hover:text-[--mediumblue] font-semibold transition-all duration-200 ease-in">View</a>
+                }
+              </div>
+            </footer>
           </div>
+        </div>
         }
       </div>
     </section>
-    
+
 
     <section id="skills" class="py-28 max-w-[800px] mx-auto">
       <h2 class="text-3xl font-semibold flex items-center gap-x-3">
         <img class="w-[24px] h-[24px]" src="assets/svg/ico.svg" alt="technologies icon">Technologies
       </h2>
-    
+
       <div class="grid md:grid-cols-2 grid-cols-1 mt-6 gap-8">
         @for (s of skills; track s.icon) {
-          <div class="cards flex flex-col items-center p-6 bg-[--darkgray] rounded-md">
-            <img class="icon w-[150px] h-[150px] mb-2" [src]="s.icon" [alt]="s.description">
-            <footer class="text-xl font-semibold text-white">{{ s.description }}</footer>
-          </div>
+        <div class="cards flex flex-col items-center p-6 bg-[--darkgray] rounded-md">
+          <img class="icon w-[150px] h-[150px] mb-2" [src]="s.icon" [alt]="s.description">
+          <footer class="text-xl font-semibold text-white">{{ s.description }}</footer>
+        </div>
         }
       </div>
     </section>
