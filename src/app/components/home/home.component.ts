@@ -22,14 +22,14 @@ export class HomeComponent {
       img: 'assets/nexiteproject.png',
       title: 'Nexite',
       description: 'Nexite is a new founded company that offers services designed to help companies pages and systems.',
-      icons: ['assets/svg/astro.svg', 'assets/svg/tailwind-css.svg'],
+      icons: ['assets/svg/astro.svg', 'assets/svg/tailwind-css.svg', 'assets/svg/typescript.svg'],
       links: ['https://bitbucket.org/nexite_app/nexitepage/src/master/', 'https://nexite.app/']
     },
     {
       img: 'assets/project3.jpg',
       title: 'Kuppa',
       description: 'Kuppa is a website of a fictitious company created at my university to simulate a request for tourist services.',
-      icons: ['assets/svg/css3.svg', 'assets/svg/javascript.svg', 'assets/svg/mongodb.svg'],
+      icons: ['assets/svg/css3.svg', 'assets/svg/javascript.svg', 'assets/svg/mongodb.svg', 'assets/svg/nodejs.svg'],
       links: ['https://github.com/DouglasG04/proyecto1-grupo2.git']
     },
     {
@@ -85,7 +85,7 @@ export class HomeComponent {
     { icon: 'assets/svg/csharp.svg', description: 'C#' },
     { icon: 'assets/svg/angular.svg', description: 'Angular' },
     { icon: 'assets/svg/react.svg', description: 'React' },
-    { icon: 'assets/svg/oracle.svg', description: 'PL SQL Oracle' },
+    { icon: 'assets/svg/mysql.svg', description: 'My SQL' },
     { icon: 'assets/svg/git.svg', description: 'Git' }
   ];
 }
